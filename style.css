@@ -1,0 +1,100 @@
+#main-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  min-height: 24em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+.landingmessage {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  flex: none;
+  background: #f6f6f6;
+  font-family: monospace;
+  padding: 2em;
+  border-radius: 6px;
+}
+
+.overlap{
+  position: relative;
+  bottom: 545px;
+  left: -430px;
+}
+
+.messageheader {
+  text-align: center;
+}
+
+
+.spook {
+  position: absolute;
+}
+
+hr {
+  opacity: 0.2;
+  border-style: dashed;
+}
+
+/* unvisited, visited, selected links */
+a {
+    color: initial;
+    text-decoration: overline;
+}
+/* mouse over link */
+a:hover {
+    color: #7d7d7d;
+}
+
+p {
+  font-size:100%;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 200%
+}
+
+/* Landscape Phone-ish */
+
+@media screen and (max-device-width: 620px) {
+  p {
+    font-size: 200%;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 400%
+  }
+  .spook {
+    position: absolute;
+    width: 1500px;
+    top: -428px;
+    left: -352px;
+  }
+}
+
+/* Portrait Phone-ish
+
+@media screen and (max-device-width: 320px) {
+  p {
+    font-size: 200%;
+    line-height: 1.2;
+  }
+}
+*/
+
+ul {
+  line-height:200%;
+}
+
+.logo {
+  min-width: 20%;
+}
